@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Pilkapedia",
+    "description": "Replaces pilk",
+    "version": "0.2",
+    "icons": {
+      "16": "pilkhead16.png",
+      "48": "pilkhead48.png",
+      "128": "pilkhead128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "jquery-2.2.3.min.js",
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
